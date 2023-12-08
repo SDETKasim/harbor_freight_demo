@@ -42,9 +42,9 @@ public class US02_StepDefs {
     public void userShouldSeeHeaderGreetingTextIsFrom(String hiGreeting, String sheetName, int rowNumber) {
 
         String firstName = ordersPage.getFirstNameFromExcel(sheetName,rowNumber);
-        String expectedAcccountGreetingText = hiGreeting+firstName;
+        String expectedAccountGreetingText = hiGreeting+firstName;
 
-        Assert.assertEquals(expectedAcccountGreetingText,ordersPage.actualAccountGreetingText());
+        Assert.assertEquals(expectedAccountGreetingText,ordersPage.actualAccountGreetingText());
 
 
     }
