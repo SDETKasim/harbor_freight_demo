@@ -31,6 +31,7 @@ Alternatively, you can use the terminal to run the tests, for example `mvn clean
         │           └───utilities
         └───resources
             ├───features
+            ├───testData
 ```
 ## Languages and Frameworks
 
