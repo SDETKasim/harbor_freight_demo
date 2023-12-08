@@ -5,7 +5,7 @@ UI Test Automation Architecture using Java Cucumber and Selenium WebDriver
 
 
 
-## 🏁Installation Steps / QuickStart Guide!🏁 🤗
+## Installation Steps / QuickStart Guide!⭐
 
 In order to use the framework:
 
@@ -14,10 +14,10 @@ In order to use the framework:
 2. Clone, i.e, download your copy of the repository to your local machine.
 
 3. Use IntelliJ IDEA to run your desired tests.
-You can use  [Runner*](src/test/java/com/hf_project/runner/CRunner.java) to run tests with tags by specifying tags in `tags = "@tagname"` and  [*FailedRunner*](src/test/java/com/hf_project/Runner/FailedRunner.java) to rerun failed tests!
+You can use  [Runner*](src/test/java/com/hf_project/runners/Runner.java) to run tests with tags by specifying tags in `tags = "@tagname"` and  [*FailedRunner*](src/test/java/com/hf_project/runners/FailedRunner.java) to rerun failed tests!
 Alternatively, you can use the terminal to run the tests, for example `mvn clean test` to run all tests, or `mvn -Dsurefire.rerunFailingTestsCount=4 clean test` to rerun failing tests automatically or `mvn -Dsurefire.rerunFailingTestsCount=4 clean test -Dbrowser=chrome -Dcucumber.filter.tags=@regression` for running specific tags / browser and rerunning failing tests automatically.
 5. To see the report, go to the `target/cucumber` folder in the project root and then open any `.html` file in the browser.
-## Project Structure🧐
+## Project Structure
 ```bash
 ├───.idea
 └───src
@@ -32,7 +32,7 @@ Alternatively, you can use the terminal to run the tests, for example `mvn clean
         └───resources
             ├───features
 ```
-## Languages and Frameworks🧐
+## Languages and Frameworks
 
 The project uses the following:
 
@@ -46,7 +46,7 @@ The project uses the following:
 - *[IntelliJ IDEA](https://www.jetbrains.com/idea/)
 
 
-## Basic Usage🧐
+## Basic Usage
 
 - ### This project utilizes Maven⭐
 
@@ -62,7 +62,7 @@ The project uses the following:
       key=value
       ```
 
-  use `getProperty()` method in [*ConfigurationReader*](src/test/java/com/hf_project/utility/ConfigurationReader.java) class to read [*config.properties*](config.properties)
+  use `getProperty()` method in [*ConfigurationReader*](src/test/java/com/hf_project/utilities/ConfigurationReader.java) class to read [*config.properties*](config.properties)
     
 - ### Cucumber Integration⭐
 
@@ -74,7 +74,7 @@ The project uses the following:
   Page Objects represent individual web pages, encapsulating their elements and related behaviors. This design promotes code reusability and easier maintenance.
 - ### Test Runner Configuration⭐
 
-    The [*Runner*](src/test/java/com/test_project/runner/Runner.java) class configures Cucumber options, specifying the location of feature files and step definitions for test execution.
+    The [*Runner*](src/test/java/com/hf_project/runners/Runner.java) class configures Cucumber options, specifying the location of feature files and step definitions for test execution.
 
 - ###  Cucumber Reports⭐
 
